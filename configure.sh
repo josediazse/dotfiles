@@ -57,3 +57,10 @@ echo ''
 echo "Installing powerlevel9k..."
 echo ''
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+# Helpful notes
+echo "NOTES:"
+echo "Set zsh as your default shell chsh -s $(which zsh)"
+echo "HyperT go to .hyper.js and set shell: 'C:\\Windows\\System32\\wsl.exe', shellArgs: ['~'],"
+echo "Remember to download the appropriate fonts, install them on Windows and update the .hyper.js file"
+echo "VS Code 'terminal.integrated.shell.window': 'C:\\Windows\\sysnative\\wsl.exe'"
