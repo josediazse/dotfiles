@@ -53,14 +53,22 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 fi
 
 # powerlevel9k install
+if [ -d ~/.oh-my-zsh/custom/themes/powerlevel9k ]; then
+echo ''
+echo "powerlevel9k already exists"
+else
 echo ''
 echo "Installing powerlevel9k..."
 echo ''
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+fi
 
 # Helpful notes
+echo ''
 echo "NOTES:"
+echo "****************************************************************************************************"
 echo "Set zsh as your default shell chsh -s $(which zsh)"
 echo "HyperT go to .hyper.js and set shell: 'C:\\Windows\\System32\\wsl.exe', shellArgs: ['~'],"
 echo "Remember to download the appropriate fonts, install them on Windows and update the .hyper.js file"
 echo "VS Code 'terminal.integrated.shell.window': 'C:\\Windows\\sysnative\\wsl.exe'"
+echo "****************************************************************************************************"
